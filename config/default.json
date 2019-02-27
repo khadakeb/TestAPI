@@ -1,0 +1,9 @@
+{
+  "DB_CONFIG": {
+    "USERNAME": "root",
+    "PASSWORD": "admin",
+    "HOSTNAME": "localhost",
+    "PORT": 3306,
+    "DB": "testdb"
+  }
+}
