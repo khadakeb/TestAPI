@@ -4,9 +4,10 @@ var appDir = require('path').dirname(require.main.filename);
 var UserController = require(`../controllers/UserController`);
 var AuthController = require(`../controllers/AuthController`);
 
-
-router.get('/', AuthController.checkToken, UserController.getUserDetails);
-router.post('/', AuthController.checkToken, UserController.addUser);
+// To get all users list
+router.get('/user', AuthController.checkToken, UserController.getUserDetails);
+// To create new user
+router.post('/user', AuthController.checkToken, UserController.addUser);
 
 
 
